@@ -1,6 +1,4 @@
-function mandarMensagem() {
-    console.log(“Estou aprendendo a programar.”);
-    }
-    console.log(“O javascript é legal.”);
-    mandarMensagem();
-    console.log(“Eu gosto de HTML e CSS.”);
+var consultaCep = fetch('https://viacep.com.br/ws/01001000/json/').then(resposta => resposta.json()).then(r => console.log(r));
+
+
+console.log(consultaCep);
